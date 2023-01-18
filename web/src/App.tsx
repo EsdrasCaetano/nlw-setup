@@ -1,17 +1,17 @@
+import { Header } from './components/Header';
+import { SummaryTable } from './components/SummaryTable';
 import './styles/global.css';
+//import { Habits } from "./components/Habits"
 
-import { Habits } from "./components/Habits"
-
-function App() {
+export function App() {
 
   return (
-    <div>
-      <Habits completed={4}/>
-      <Habits completed={10}/>
-      <Habits completed={3}/>
-      <Habits completed={25}/>
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <div className='w-full max-w-5xl px-6 flex flex-col gap-16'>
+        <Header />
+
+        <SummaryTable />
+      </div>
     </div>
   )
 }
-
-export default App
